@@ -12,7 +12,8 @@ origins = [
 # Cho phép gọi từ React/Vite
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
+    allow_origins=[ "http://localhost:5173",
+        "https://to-do-list-dun-chi.vercel.app"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -20,5 +21,6 @@ app.add_middleware(
 
 # Đăng ký router
 app.include_router(chat.router, prefix="/api", tags=["Chat"])
+
 
 
