@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { getTasksLocal } from "../services/taskLocal";
 import TaskCalendar from "../components/TaskCalendar";
 
