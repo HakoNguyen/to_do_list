@@ -10,7 +10,7 @@ export interface AiMessage {
 }
 
 const DEFAULT_API_URL =
-  import.meta.env.VITE_AI_API_URL || "http://localhost:8000/chat";
+  import.meta.env.VITE_AI_API_URL || "https://to-do-list-tos5.onrender.com/api";
 
 export async function chatGenerateTask(
   prompt: string,
@@ -43,3 +43,4 @@ export async function chatGenerateTask(
   }
   return { draft, raw: data };
 }
+
