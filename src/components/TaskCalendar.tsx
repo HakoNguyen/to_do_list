@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { Task } from "../models/task";
 
 interface Props {
