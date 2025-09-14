@@ -6,7 +6,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:5173",        # khi dev local
-    "https://your-frontend.vercel.app"  # domain Vercel thật
+    "https://to-do-list-dun-chi.vercel.app/"  # domain Vercel thật
 ]
 
 # Cho phép gọi từ React/Vite
@@ -20,4 +20,5 @@ app.add_middleware(
 
 # Đăng ký router
 app.include_router(chat.router, prefix="/api", tags=["Chat"])
+
 
